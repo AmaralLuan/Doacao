@@ -1,0 +1,31 @@
+.ProfileMenu {
+    height: 100%;
+    width: 20rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ProfileMenu div h4 {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.ProfilePicBox {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.ProfilePicBox img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}

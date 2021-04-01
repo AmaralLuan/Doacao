@@ -1,0 +1,32 @@
+.ButtonPrimary {
+    color: var(--white);
+    background-color: var(--main-color);
+    font-size: 1.6rem;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem 1.5rem;
+    transition: all .2s;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonPrimary svg {
+    font-size: 2rem;
+    margin-left: .5rem;
+}
+
+.ButtonPrimary:hover {
+    background-color: var(--main-color-darker);
+}
+
+@media (max-width: 700px) {
+    .ButtonPrimary {
+        padding: 1.5rem 1rem;
+    }
+}

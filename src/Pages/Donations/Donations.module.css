@@ -1,0 +1,16 @@
+.Donations {
+    position: relative;
+}
+
+.Donations a {
+    position: fixed;
+    width: 17rem;
+    right: 4rem;
+    bottom: 4rem;
+}
+
+.Donations a:hover {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(222,222,222,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(222,222,222,1);
+    box-shadow: 0px 3px 5px 0px rgba(222,222,222,1);
+}

@@ -1,0 +1,92 @@
+.Register {
+    display: flex;
+    height: 100vh;
+}
+
+.leftSide {
+    width: 50%;
+    font-size: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSide h2 {
+    align-self: flex-start;
+    color: var(--main-color);
+}
+
+.leftSide form {
+    width: 70%;
+}
+
+.leftSide button {
+    margin: 1rem 0;
+}
+
+.leftSide form p {
+    display: none;
+}
+
+.leftSide p {
+    width: 100%;
+    margin: 0;
+}
+
+.leftSide a {
+    text-decoration: none;
+}
+
+
+.rightSide {
+    width: 50%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    background-color: var(--color-background);
+}
+
+.rightSide p {
+    width: 100%;
+}
+
+.rightSide img {
+    width: 60%;
+}
+
+@media (max-width: 700px) {
+    .Register {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+        height: 110vh;
+    }
+
+    .leftSide {
+        width: 100%;
+    }
+
+    .leftSide form {
+        width: 90%;
+    }
+
+    .leftSide h2 {
+        align-self: center;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .leftSide form p {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .rightSide {
+        display: none;
+    }
+}

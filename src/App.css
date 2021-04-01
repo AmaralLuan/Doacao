@@ -1,38 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 1.6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,button,textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+:root {
+  --white: #ffffff;
+  --main-color: #6a2cd8;
+  --main-color-darker: #5622b3;
+  --light-grey: #FAFAFC;
+  --light-grey-2: #f5f5f5;
+  --grey: #c4c4c4;
+  --dark-grey: #828282;
+  --color-background: #F9F6FD;
+  --dark-title: #32264D;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  --color-button-whatsapp: #04D361;
+  --color-button-whatsapp-darker: #05c059;
 }

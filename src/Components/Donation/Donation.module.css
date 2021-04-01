@@ -1,0 +1,94 @@
+.Donation {
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: .8rem;
+    margin: 2.5rem auto;
+    max-width: 74rem;
+}
+
+.Donation header {
+    padding: 3rem;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.Donation header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.Donation header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Donation header div h3 {
+    color: var(--dark-title);
+}
+
+.Donation header div span {
+    font-size: 1.3rem;
+}
+
+.Donation a {
+    position: static;
+}
+
+.imageGrid {
+    margin: 1.6rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    column-gap: 1.6rem;
+    overflow-x: scroll;
+}
+
+.imageGrid::-webkit-scrollbar {
+    display: none;
+}
+
+.boxImgActive {
+    width: 100%;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.boxImgActive img {
+    width: 40rem;
+    height: 40rem;
+    border-radius: .8rem;
+}
+
+.Donation p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: var(--main-color);
+    padding: 0 2rem;
+}
+
+.Donation footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-grey);
+    border-top: 1px solid var(--grey);
+    padding: 3rem 4rem;
+}
+
+.Donation footer div {
+    display: flex;
+}
+
+.Donation footer div h4 {
+    color: var(--dark-title);
+}
+
+.Donation footer div span {
+    color: var(--main-color);
+    font-weight: 700;
+}

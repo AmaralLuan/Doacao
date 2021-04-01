@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
+import Donations from './Pages/Donations/Donations';
+import RegisterDonate from './Pages/RegisterDonate/RegisterDonate';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Login} />
+
+        <Route exact path="/donations" component={Donations} />
+
+        <Route exact path="/donate" component={RegisterDonate} />
+      </Switch>
+    </Router>
   );
 }
 

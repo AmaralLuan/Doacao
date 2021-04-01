@@ -1,0 +1,16 @@
+.ButtonImg {
+    background: none;
+    border: none;
+    border-radius: 2rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ButtonImg img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 2rem;
+}
