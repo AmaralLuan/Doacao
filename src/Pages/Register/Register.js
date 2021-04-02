@@ -35,6 +35,7 @@ function Register() {
 
     const submitHandler = useCallback((event) => {
         event.preventDefault();
+        setName('');
       }, []);
 
     return (

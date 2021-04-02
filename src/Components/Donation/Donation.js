@@ -30,7 +30,7 @@ function Donation(props) {
             </div>
 
             <div className={styles.boxImgActive}>
-                <img src={props.imgActive} alt />
+                <img src={props.imgActive} alt="" />
             </div>
             <p>
                 {props.description}

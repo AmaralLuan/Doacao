@@ -1,6 +1,5 @@
 import './App.css';
 import Login from './Pages/Login/Login';
-import Register from './Pages/Register/Register';
 import Donations from './Pages/Donations/Donations';
 import RegisterDonate from './Pages/RegisterDonate/RegisterDonate';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'

@@ -15,3 +15,7 @@
 .RegisterDonate form button, a {
     margin: 1rem 0;
 }
+
+.imgsField {
+    width: 100%;
+}

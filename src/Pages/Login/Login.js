@@ -4,14 +4,13 @@ import ButtonAdd from '../../Components/Button/ButtonAdd/ButtonAdd'
 import Input from '../../Components/Input/Input'
 import Form from '../../Components/Form/Form';
 
-import { Redirect, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 import Axios from 'axios';
 
 import  { IoLogInOutline } from 'react-icons/all';
 
 import LoginImg from './LoginImg/LoginImg.svg';
-import Donations from '../Donations/Donations';
 
 const Login = () => {
 

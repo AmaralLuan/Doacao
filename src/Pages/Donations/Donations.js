@@ -1,33 +1,39 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Donations.module.css';
 import Donation from '../../Components/Donation/Donation';
 import ButtonPrimary from '../../Components/Button/ButtonPrimary';
 import Header from '../../Components/Layout/Header/Header'
 import { Link } from 'react-router-dom';
+import Axios from 'axios';
 
 function Donations() {
+    const [donationsList, setDonationsList] = useState([])
+
+    useEffect(() => {
+        Axios.get(`http://localhost:3001/api/v1/donations/getdonations`).then((response) => {
+          setDonationsList(response.data);
+        })
+      }, [])
+
     return (
         <>
             <Header />
 
             <div className={styles.Donations}>
-                <Donation
-                img="https://source.unsplash.com/random"
-                name="Diego Fernandes"
-                setor="Garavelo"
-                cidade='Goiânia'
-                imgActive = "https://source.unsplash.com/random"
-                condition="Usado"
-                description="Estou doando esse jogo de mesa e cadeiras, pois está ocupando espaço aqui em casa, só precisa retirar, não entrego no local." />
 
-                <Donation
-                img="https://source.unsplash.com/random"
-                name="Luan Amaral"
-                setor="Jd América"
-                cidade='Goiânia'
-                imgActive = "https://source.unsplash.com/random"
-                condition="Usado"
-                description="Estou doando essa geladeira semi-nova, pois comprei uma recentemente e essa ficou sem serventia. Podemos combinar a entrega." />
+            {donationsList.map((value) => {
+
+                    return (
+                        <Donation
+                            key={value.id}
+                            img={value.images}
+                            name={value.name}
+                            setor={value.setor}
+                            cidade={value.city}
+                            imgActive = {value.images}
+                            description={value.description} />
+                    )
+                })}
 
                 <Link to="/donate">
                     <ButtonPrimary>

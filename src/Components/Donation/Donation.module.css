@@ -69,6 +69,7 @@
     line-height: 2.8rem;
     color: var(--main-color);
     padding: 0 2rem;
+    text-align: center;
 }
 
 .Donation footer {
