@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useState, useEffect } from 'react'
 import Axios from 'axios';
 import styles from './RegisterDonate.module.css';
 import Form from '../../Components/Form/Form'
@@ -18,7 +18,14 @@ const RegisterDonate = () => {
     const [imagem, setImagem] = useState([]);
     const [description, setDescription] = useState('');
     const [phone, setPhone] = useState('');
-    const [status, setStatus] = useState('')
+    const [status, setStatus] = useState('');
+    const [user_id, setUser_id] = useState('');
+
+    useEffect(() => {
+        Axios.get('http://localhost:3001/api/v1/register/login').then((response) => {
+            setUser_id(response.data.user[0].user_id);
+        })
+    }, [])
 
 
     const submitValues = () => {
@@ -28,7 +35,8 @@ const RegisterDonate = () => {
             cidade: cidade,
             imagem: imagem,
             description: description,
-            phone: phone
+            phone: phone,
+            user_id: user_id
         }).then((response) => {
             console.log(response);
             setStatus(response.data.message)

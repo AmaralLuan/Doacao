@@ -15,6 +15,7 @@ function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const [url, setURL] = useState('');
 
     const [registerStatus, setRegisterStatus] = useState('');
 
@@ -23,7 +24,8 @@ function Register() {
             name: name,
             email: email,
             password: password,
-            confirmPassword: confirmPassword
+            confirmPassword: confirmPassword,
+            url: url
         }).then((response) => {
             setRegisterStatus(response.data.message);
             console.log(response);
@@ -76,6 +78,14 @@ function Register() {
                         type='password'
                         placeholder='Confirme sua senha'
                         onChange={e =>{setConfirmPassword(e.target.value)}}
+                        required
+                        />
+
+                        <Input
+                        label='Endereço da Imagem de Perfil'
+                        type='url'
+                        placeholder='Url da imagem'
+                        onChange={e =>{setURL(e.target.value)}}
                         required
                         />
 

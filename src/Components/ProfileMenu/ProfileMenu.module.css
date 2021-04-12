@@ -1,16 +1,31 @@
 .ProfileMenu {
     height: 100%;
-    width: 20rem;
+    width: 25rem;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
 }
 
 .ProfileMenu div h4 {
     font-size: 1.3rem;
     color: var(--white);
+}
+
+.ProfileMenu svg {
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.Menu div{
+    position: absolute;
+    top: 7rem !important;
+}
+
+.Menu ul li{
+    font-size: 1.5rem;
 }
 
 .ProfilePicBox {
@@ -21,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1rem;
+    margin: 0 1rem;
 }
 
 .ProfilePicBox img {

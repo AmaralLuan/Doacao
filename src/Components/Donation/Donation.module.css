@@ -59,7 +59,7 @@
 }
 
 .boxImgActive img {
-    width: 40rem;
+    width: auto;
     height: 40rem;
     border-radius: .8rem;
 }
