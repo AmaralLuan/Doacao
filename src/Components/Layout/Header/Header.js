@@ -9,8 +9,7 @@ function Header() {
                 <h1>DoAção</h1>
             </div>    
 
-            <ProfileMenu 
-             name="Luan"/>
+            <ProfileMenu />
         </div>
     )
 }

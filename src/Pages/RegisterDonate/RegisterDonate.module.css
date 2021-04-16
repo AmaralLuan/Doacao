@@ -3,6 +3,12 @@
     padding: 2rem;
 }
 
+.RegisterDonate h2 {
+    width: 100%;
+    text-align: center;
+    color: var(--main-color);
+}
+
 .RegisterDonate form {
     max-width: 74rem;
     margin: 2rem auto;
@@ -14,7 +20,14 @@
 
 .RegisterDonate form button, a {
     margin: 1rem 0;
+    width: 100%;
 }
+
+.RegisterDonate button {
+    width: 17rem;
+    margin-left: auto;
+}
+
 
 .imgsField {
     width: 100%;

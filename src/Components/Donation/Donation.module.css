@@ -36,6 +36,15 @@
 
 .Donation a {
     position: static;
+    background: none;
+    text-decoration: none;
+    color: var(--white);
+    border: none;
+}
+
+.Donation a:hover {
+    border: none;
+    background: none;
 }
 
 .imageGrid {

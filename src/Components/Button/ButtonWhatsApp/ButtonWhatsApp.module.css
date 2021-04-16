@@ -11,6 +11,13 @@
     cursor: pointer;
     text-decoration: none;
     transition: all .2s;
+    border: none;
+    outline: none;
+}
+
+.ButtonWhatsApp a:hover {
+    text-decoration: none;
+    border: none;
 }
 
 .ButtonWhatsApp:hover {

@@ -26,13 +26,16 @@ function Donations() {
 
                     return (
                         <Donation
+                            profilePic = {value.images}
                             key={value.id}
                             img={value.images}
                             name={value.name}
                             setor={value.setor}
                             cidade={value.city}
                             imgActive = {value.images}
-                            description={value.description} />
+                            description={value.description}
+                            condition={value.condicao}
+                            phone={`https://wa.me/${value.phone}`} />
                     )
                 })}
 
