@@ -1,0 +1,37 @@
+.list {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+
+.item {
+    border: 1px solid lightgrey;
+    color: black;
+    background: var(--main-color);
+    list-style-type: none;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    transition: all .2s;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    list-style-type: none;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.item:hover {
+    background-color: var(--main-color-darker);
+}
+
+.active {
+    width: 100%;
+    color: white;
+    list-style-type: none;
+    border-radius: 4px;
+}
