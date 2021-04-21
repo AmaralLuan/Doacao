@@ -38,7 +38,7 @@ const Login = () => {
     }
 
     useEffect(() => {
-        Axios.get('http://localhost:3001/api/v1/register/login').then((response) => {
+        Axios.get('https://doacao-backend.herokuapp.com/api/v1/register/login').then((response) => {
             if (response.data.loggedIn ===  true) {
                 setLoginStatus(response.data.user[0].email)
             }
