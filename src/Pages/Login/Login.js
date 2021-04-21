@@ -90,7 +90,7 @@ const Login = () => {
 
                     <h2>{loginStatus}</h2>
     
-                    <p>Ainda não é cadastrado? <a href='https://doacaoteste.netlify.app/register'>clique aqui!</a></p>
+                    <p>Ainda não é cadastrado? <a href='/register'>clique aqui!</a></p>
                  </div>
     
                  <div className={styles.rightSide}>
