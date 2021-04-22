@@ -22,7 +22,7 @@ const Login = () => {
 
 
     const submitValues = () => {
-        Axios.post('http://localhost:3001/api/v1/register/login', {
+        Axios.post('https://doacao-backend.herokuapp.com/api/v1/register/login', {
             login: login,
             password: password
         }).then((response) => {
