@@ -20,7 +20,6 @@ const Login = () => {
 
     const [auth, setAuth] = useState(false);
 
-    Axios.defaults.withCredentials = true;
 
     const submitValues = () => {
         Axios.post('http://localhost:3001/api/v1/register/login', {
