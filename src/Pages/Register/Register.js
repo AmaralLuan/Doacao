@@ -20,7 +20,7 @@ function Register() {
     const [registerStatus, setRegisterStatus] = useState('');
 
     const submitValues = () => {
-        Axios.post('http://localhost:3001/api/v1/register/registerUser', {
+        Axios.post('https://doacao-backend.herokuapp.com/api/v1/register/registerUser', {
             name: name,
             email: email,
             password: password,
