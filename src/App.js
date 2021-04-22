@@ -15,7 +15,8 @@ const App = () => {
 
         <Route exact path="/donate" component={RegisterDonate} />
 
-        <Route exact path="https://doacaoteste.netlify.app/register" component={Register} />
+        <Route exact path="/register" component={Register} />
+
       </Switch>
     </Router>
   );
