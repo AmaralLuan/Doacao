@@ -22,7 +22,7 @@ const RegisterDonate = () => {
 
 
     const submitValues = () => {
-        Axios.post('https://doacao-backend.herokuapp.com/v1/register/registerdonate', {
+        Axios.post('https://doacao-backend.herokuapp.com/api/v1/register/registerdonate', {
             itemName: name,
             setor: setor,
             cidade: cidade,
