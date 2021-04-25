@@ -14,7 +14,7 @@ function Donations() {
     
 
     useEffect(() => {
-        Axios.get(`http://localhost:3001/api/v1/donations/getdonations`).then((response) => {
+        Axios.get(`https://doacao-backend.herokuapp.com/api/v1/donations/getdonations`).then((response) => {
           setDonationsList(response.data);
         })
       }, [])
